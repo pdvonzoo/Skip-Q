@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		
+	</head>
+
+	<body>
+        <section class="leftBody">
+            <h1>SKIP Q</h1>
+            <div class="top">
+                <span class="left">Digital</span>
+                <span>8 812 407 22 69</span>
+            </div>
+            <main>
+                <section class="first_content">
+                    <h2>What is Lorem <span>Ipsum?</span></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries </p>
+                </section>
+                <section class="second_content">
+                    <h2>Lorem <span>Ipsum</span> is not simply random text. </h2>
+                    <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+                </section>
+                <div class="scroll">
+                    <ul>
+                        <li class="scroll_first">O</li>
+                        <li>H</li>
+                        <li>A</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </main>
+            <div class="footer">
+                <span class="footer_left">RE KE REPETITION</span>
+                <span>Finibus Bonorum</span>
+            </div>
+        </section>
+        <section class="rightBody">
+	    <div class="wrapper">
+            <span class="menu"></span>
+        </div>
+        </section>
+        <div class="overlay">
+            <ul>
+                <li><a href="#none">Home</a></li>
+                <li><a href="#none">Works</a></li>
+                <li><a href="#none">About</a></li>
+                <li><a href="#none">Contact</a></li>
+            </ul>
+        </div>
+	    <script>
+        $(document).ready(function () {
+            $('.menu').click(function() {
+                $('.overlay').toggleClass('anim');
+            });
+            $('.animation').click(function(){
+                $('.anim').toggleClass('reverse-animation');
+            })
+        });
+        </script>
+	</body>
+</html>

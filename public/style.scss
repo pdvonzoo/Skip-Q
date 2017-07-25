@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:700|Chathura|Electrolize|Forum|Open+Sans:600,700|Rajdhani|Teko');
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,/* NOTE:  */ tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    background-color: #F4F4F4;
+}
+body {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: url("https://drive.google.com/uc?export=view&id=0B1myX2Ur2lOQampCcUFCQzl2X2c") 30% 100% no-repeat;
+    background-size: 600px auto;
+    background-color: #F4F4F4;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END : css reset */
+
+
+/* Drag color */
+::-moz-selection {
+    background-color: #333;
+    color: #fff;
+}
+::selection {
+    background-color: #333;
+    color: #fff;
+}
+
+/* border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.leftBody{
+    flex: 1;
+    height: 100%;
+    padding: 25px 40px;
+    h1{
+        font-size: 20px;
+        font-family: 'Teko', sans-serif;
+    }
+    .top{
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        font-family: 'Rajdhani', sans-serif;
+        .left{
+            flex: 1;
+            
+        }
+    }
+    /* HEADER 영역 */
+
+    main{
+        position: relative;
+        width: 100%;
+        height: 520px;
+        .first_content{
+            position: absolute;
+            width: 430px;
+            left: 222px;
+            h2{
+                font-family: 'Advent Pro', sans-serif;
+                font-size: 31px;
+                margin-bottom: 24px;
+                span{
+                    color: #2E45CC;
+                }
+            }
+            p{
+                font-family: 'Rajdhani', sans-serif;
+                line-height: 30px;
+            }
+        }
+        .second_content{
+            position: absolute;
+            width: 360px;
+            top: 235px;
+            left: 720px;
+            h2{
+                font-family: 'Advent Pro', sans-serif;
+                font-size: 31px;
+                margin-bottom: 24px;
+                span{
+                    color: #2E45CC;
+                }
+            }
+            p{
+                font-family: 'Rajdhani', sans-serif;
+                line-height: 30px;
+            }
+        }
+        .scroll{
+            position: absolute;
+            top: 60px;
+            ul{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 60px;
+                font-weight: 600;
+                color: #D8D8D8;
+                li{
+                    .scroll_first{
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+    /* MAIN 영역 */
+
+    .footer{
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        .footer_left{
+            flex: 1;
+        }
+
+    }
+    /* FOOTER 영역 */
+}
+
+
+.rightBody{
+    position: relative;
+    width: 5%;
+    background-color: black;
+    .wrapper {
+        width: 100%;
+        height: 100vh; 
+        position: absolute;
+        overflow: hidden;
+        span {
+            z-index: 9999;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            width: 35px;
+            height: 4px;
+            background: #ffffff;
+            cursor: pointer;
+            &:before {
+                display: block;
+                position: absolute;
+                content: '';
+                left: 0;
+                height: 4px;
+                background: #f2f2f2;
+                width: 20px;
+                top: -8px;
+            }
+        }
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    background: #5263C6;
+
+    transition: all 0.5s ease;
+    &.anim {
+        bottom: 0;
+        animation: menu-anim 1.5s 1 ease-out normal;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+        
+        font-size: 24px;
+        font-weight: 800;
+        li {
+          margin: 20px 0;
+            a {
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                padding: 20px 0; 
+            }
+        }
+    }
+}
